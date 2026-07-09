@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://leslyleondev.github.io/overknight-website/sitemap.xml

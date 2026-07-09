@@ -165,7 +165,9 @@ section { padding: clamp(3rem, 6vw, 5.5rem) 0; position: relative; z-index: 1; }
 .brand-mark {
   width: 30px; height: 30px;
   border-radius: 9px;
-  background: var(--grad-accent);
+  object-fit: cover;
+  display: block;
+  flex-shrink: 0;
 }
 .nav-links {
   display: flex;

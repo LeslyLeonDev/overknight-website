@@ -50,3 +50,19 @@ document.addEventListener('DOMContentLoaded', () => {
     onScroll();
   }
 });
+    }, { threshold: 0.12 });
+    revealEls.forEach(el => io.observe(el));
+  } else {
+    revealEls.forEach(el => el.classList.add('in'));
+  }
+
+  // Header shadow on scroll
+  const header = document.querySelector('.site-header');
+  if (header) {
+    const onScroll = () => {
+      header.style.boxShadow = window.scrollY > 8 ? '0 6px 24px rgba(0,0,0,0.35)' : 'none';
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  }
+});
